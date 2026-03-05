@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-950 text-white min-h-screen;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-red-950/20 backdrop-blur-lg border border-red-800/30 rounded-xl;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg font-semibold
+           hover:from-red-700 hover:to-red-800 transform hover:scale-105 transition-all duration-200
+           shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-red-950/20 text-white rounded-lg border border-red-800/30
+           hover:bg-red-900/30 transition-all duration-200 backdrop-blur-sm;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-red-950/20 border border-red-800/30 rounded-lg text-white
+           placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500
+           focus:border-transparent backdrop-blur-sm transition-all duration-200;
+  }
+  
+  .sentiment-positive {
+    @apply bg-green-500/20 text-green-300 border-green-400/30;
+  }
+  
+  .sentiment-negative {
+    @apply bg-red-500/20 text-red-300 border-red-400/30;
+  }
+  
+  .sentiment-mixed {
+    @apply bg-yellow-500/20 text-yellow-300 border-yellow-400/30;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800/50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-500/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-500/70;
+}
