@@ -1,4 +1,4 @@
-# 🎬 Movie Sentiment Analyzer
+# 🎬 Movie Sentiment Analyzer.
 
 A modern, AI-powered movie analysis tool that fetches movie details from IMDb and provides comprehensive sentiment analysis of audience reviews. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
